@@ -1,0 +1,2 @@
+ name: SQAaaS source code assessment
+  uses: EOSC-synergy/sqaaas-assessment-action@2.4.1
