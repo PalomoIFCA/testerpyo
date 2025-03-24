@@ -5,7 +5,7 @@
 on: [push]
 jobs:
   sqaaas_job:
-    #runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     #name: Job that triggers SQAaaS platform
     #steps:
     # - name: SQAaaS action step
@@ -15,6 +15,6 @@ jobs:
     uses: eosc-synergy/sqaaas-step-action@v1
     with:
         name: pytest-step
-        container: ubuntu:latest
-        tool: pytest
-        test-path: ./petition.py
+          #container: ubuntu:latest
+        tool: pycodestyle
+        test-path: .
