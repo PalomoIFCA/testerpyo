@@ -12,8 +12,9 @@ jobs:
         #uses: eosc-synergy/sqaaas-assessment-action@v2
         #
         #
-    name: Job that triggers SQAaaS platform
-    steps:
-      - name: SQAaaS action step
-        uses: eosc-synergy/sqaaas-assessment-action@v2
-
+    uses: eosc-synergy/sqaaas-step-action@v1
+    with:
+        name: pytest-step
+        container: myownpytestimage:latest
+        tool: pytest
+        test-path: ./tests
