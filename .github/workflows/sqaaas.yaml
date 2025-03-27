@@ -6,8 +6,9 @@ on: [push]
 jobs:
   sqaaas_job:
     runs-on: ubuntu-latest
-    name: Job that triggers SQAaaS platform
+    name: Job that triggers SQAaaS platform branch
     steps:
       - name: SQAaaS action step
-        uses: eosc-synergy/sqaaas-assessment-action@v2
+        uses: eosc-synergy/sqaaas-assessment-action@feature/only_criteria_workflow
+
         
