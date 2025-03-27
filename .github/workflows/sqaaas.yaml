@@ -10,5 +10,9 @@ jobs:
     steps:
       - name: SQAaaS action step
         uses: eosc-synergy/sqaaas-assessment-action@feature/only_criteria_workflow
-
+        with: 
+           criteria_workflow_only: True
+           explicit_criteria_workflow: {"criteria_workflow":[{"id": "QC.Uni","tools":[{"name":"commands","docker":{"image":"sqaaas_yprov:v1.0"},"args": [{"id":"commands","type":"positional","description":"Commands","value":"python3 -m pytest -v","format":"string","selectable":true,"repeatable":true}] } ] } ]  }
+            
         
+       -run: echo "this is readable ${{explicit_criteria_workflow}}" 
