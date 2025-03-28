@@ -12,7 +12,7 @@ jobs:
         uses: eosc-synergy/sqaaas-assessment-action@feature/only_criteria_workflow
         with: 
            criteria_workflow_only: True
-           explicit_criteria_workflow: "criteria_workflow": [
+           explicit_criteria_workflow: '"criteria_workflow": [
         {
             "id": "QC.Sty",
             "tools": [
@@ -38,7 +38,7 @@ jobs:
                 }
             ]
         }
-    ]
+    ]'
             
         
       #- run: echo "this is readable ${{explicit_criteria_workflow}}" 
