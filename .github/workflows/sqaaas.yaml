@@ -12,7 +12,7 @@ jobs:
            uses: eosc-synergy/sqaaas-assessment-action@feature/only_criteria_workflow    
            with:    
                    criteria_workflow_only: 'True'           
-                   explicit_criteria_workflow: '{"criteria_workflow": [{"id": "QC.Sty","tools": [{"docs": "https://flake8.pycqa.org/",{"docker":{"dockerfile":"QC.Sty/pyophidia/Dockerfile"},"reporting": {"validator": "boolean","requirement_level": "RECOMMENDED"},"name": "flake8","lang": "Python"}]}]}'
+                   explicit_criteria_workflow: '{"criteria_workflow": [{"id": "QC.Sty","tools": [{"docs": "https://flake8.pycqa.org/","docker": {"dockerfile":"QC.Sty/pyophidia/Dockerfile"},"reporting": {"validator": "boolean","requirement_level": "RECOMMENDED"},"name": "flake8","lang": "Python"}]}]}'
 
 
 
